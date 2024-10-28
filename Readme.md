@@ -143,8 +143,73 @@ The most important aspects of quality software encompass a blend of operational 
 
 # Q3	Outline a standard high level structure for a MERN stack application and explain the components
 
+## Overview of MERN Stack
+A standard high-level structure for a **MERN stack application** is organised into three main tiers: **frontend**, **backend**, and **database**, all interconnected to facilitate end-to-end development using JavaScript. Here’s how the architecture is generally structured:  
+![Tech Stack](docs/techStack.png)  
+- **Frontend (React.js)**
+- **Backend (Express.js & Node.js)**
+- **Database (MongoDB)**
+
+Each of these tiers interacts through HTTP requests, JSON data exchange, and server communication to provide a seamless user experience.
+
+## Components of a MERN Stack Application
+
+![MERN ](docs/MERN.png)  
+
+### 1. Frontend: React.js
+- **Role**: Handles the client-side, rendering the user interface and managing user interactions.  
+- **Structure**:  
+  - **Components**: React is built on a component-based architecture where individual components represent distinct parts of the user interface(e.g. header, footer, forms, etc.).  
+  - **State Management**: React uses hooks like `useState` and `useEffect` to manage and manipulate the state of the application.  
+  - **Routing**: Client-side routing is often managed using libraries like **React Router** to handle different URLs and display corresponding components without reloading the page.  
+- **Data Flow**: React sends HTTP requests(GET, POST, PUT, DELETE) to the backend to fetch, update, or delete data, using JavaScript libraries like Axios or Fetch API.  
+- **Output**: The front end renders data dynamically and updates the view based on user actions.  
+
+### 2. Backend: Express.js & Node.js
+- **Role**: Manages the server-side logic, routes requests, and handles communication between the client and the database.  
+- **Express.js**:  
+  - A **minimalist web framework** for Node.js that helps manage HTTP requests and responses.  
+  - **Routing**: Sets up routes to handle API requests(e.g. `/api/users`, `/api/posts`) and middleware for authentication, logging, or error handling.  
+  - **Middleware**: Includes request parsers, authentication checks, and response headers to manage server functionality.  
+- **Node.js**:  
+  - Serves as the **runtime environment** for executing JavaScript code on the server.  
+  - Handles **server hosting** and integrates Express.js for routing, middleware, and API endpoints.  
+  - Uses **non-blocking I/O** and event-driven architecture, making it efficient for handling concurrent requests.  
+- **API Communication**: The backend exposes RESTful APIs or GraphQL endpoints for the frontend to communicate with.  The data is typically sent and received in **JSON format**.  
+
+### 3. Database: MongoDB  
+- **Role**: Serves as the database layer, storing data and facilitating CRUD operations.  
+- **Data Storage**:  
+  - MongoDB is a **NoSQL document-oriented database** that stores data in **JSON-like documents**(BSON format).  
+  - It offers a **flexible schema**, making it easy to adapt to changing data structures.  
+- **Data Interaction**:  
+  - **Mongoose**, an ODM (Object Data Modeling) library for MongoDB and Node.js, is often used to define schemas, models, and manage interactions with the database.  
+  - It supports CRUD operations like `find()`, `insertOne()`, `updateOne()`, and `deleteOne()`, which correspond to HTTP methods in the backend.  
+- **Scalability**: MongoDB’s distributed nature makes it scalable for handling large volumes of data and high-traffic applications.  
+
+## How Components Interact in a MERN Stack Application
+- **Frontend to Backend**:  
+  - The frontend(React) sends requests to the backend(Express/Node) to fetch or update data.  For instance, when a user submits a form, React sends a POST request to an Express.js endpoint.  
+- **Backend to Database**:  
+  - The backend processes requests, performs data validation, and communicates with the MongoDB database using Mongoose or MongoDB Node.js driver.  
+- **Backend to Frontend**:  
+  - After performing the necessary operations on the data, the backend sends responses(often in JSON format) back to the frontend.  
+- **Frontend Rendering**:  
+  - React renders the data dynamically based on the response received, updating the UI accordingly.  
+
+## Key Features of the MERN Stack Structure
+- **Unified Language**: JavaScript is used throughout the stack, simplifying the development and reducing transition times between layers.  
+- **JSON Data Flow**: JSON is used for data exchange across all tiers, from front-end requests to database storage.  
+- **Component-Based Development**: Modular structure allows for easy maintenance, scaling, and debugging, as each tier handles a specific part of the application.  
+
+This high-level structure makes the **MERN stack** an efficient choice for building scalable, dynamic web applications.  
 
 
+
+### references
+* https://medium.com/@shivang1691401/understanding-clean-architecture-in-mern-building-robust-and-maintainable-applications-7546805fd849  
+* https://www.mongodb.com/resources/languages/mern-stack 
+* https://emeritus.org/blog/what-is-mern-stack/ 
 
 # Q4	A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
