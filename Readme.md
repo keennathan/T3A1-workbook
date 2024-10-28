@@ -69,7 +69,8 @@ A standard source control process for a large project is centered around structu
 # Q2	What are the most important aspects of quality software?
 
 Quality software is defined by how well it meets user requirements, performs its intended functions, and adapts to evolving needs.  It plays a crucial role in achieving business goals,improving user satisfaction,and ensuring long term success.  The following identifies the key aspects of quality software, based on fundamental software quality metrics and attributes.  These aspects encompass operational efficiency, transitional adaptability and ease of maintenance, offering a holistic perspective on what makes software effective and reliable.  
-
+<br> 
+![software characteristics](docs/softwareCharacteristics.png)
 
 ## Usability
 Usability is a fundamental aspect of quality software, focusing on how easy and intuitive the software is for users.  Quality software should have a clean, user-friendly interface that requires minimal effort to navigate and understand.  When usability is prioritised, users are more likely to engage with the software, promoting user satisfaction and loyalty.  Strong usability not only drives higher adoption rates but also enhances customer retention and creates a positive user experience.  
