@@ -454,38 +454,456 @@ The combination of technical skills and project management strategies led to a s
 
 # Q7	Explain control flow, using an example from the JavaScript programming language
 
+## Control Flow
+Control flow in programming refers to the order in which individual statements are executed or evaluated in a script.  In JavaScript, code generally runs from top to bottom, but with control flow statements, such as conditional statements and loops, we can modify this sequence, allowing us to build interactive applications that respond dynamically to varying conditions.  
 
+## Example of Control Flow with Conditional Statements
+Consider an example where we want to determine if a user is an adult based on their age using an `if...else` statement: 
+``` 
+    const age = 18;
 
+    if (age >= 18) {
+        console.log("You are an adult");
+    } else {
+        console.log("You are not yet an adult");
+    } 
+```   
 
+**In this case:**  
+
+1. **Condition Check:** The `if` statement checks whether the condition `age >= 18` is true.  
+2. **Branching:** If the condition is `true`(the user is 18 or older), the program executes the code inside the `if` block(`console.log("You are an adult")`).  If `false`, it skips this block and executes the code within the `else` block (`console.log("You are not yet an adult")`).  
+## Looping Control Flow with Loops 
+In addition to conditional statements, JavaScript also supports loops, which allow us to repeatedly execute a block of code based on certain conditions.  Loops are essential for tasks that require repetitive actions, such as iterating over items in a list or performing a task multiple times.  
+
+### For Loop 
+The `for` loop is ideal when you know in advance how many times you want to execute a block of code. Here's an example of a `for` loop that prints numbers 1 through 5:  
+```
+    for (let i = 1; i <= 5; i++) {
+    console.log(i);
+    }
+```   
+
+**In this `for` loop:**  
+
+1. **Initialisation:** `let i = 1` initialises the counter variable `i`.  
+2. **Condition:** The loop continues as long as `i <= 5` is `true`.  
+3. **Increment:** After each loop iteration, `i` is incremented by 1 (`i++`).  
+4. **Execution:** The loop runs until the condition becomes `false`, printing numbers 1 through 5.   
+
+### While Loop
+
+A `while` loop is used when the number of iterations is not known ahead of time, and it continues to run as long as a specified condition remains true.  
+
+```
+    let i = 1;
+
+    while (i <= 5) {
+    console.log(i);
+    i++;
+    }
+```   
+
+This loop performs similarly to the `for` loop example above but demonstrates that you can separate initialisation and increment outside the loop structure, making `while` loops useful for conditions that depend on dynamic factors(e.g., user input).  
+
+### do...while Loop  
+
+The `do...while` loop guarantees at least one execution of the loop's code block, as it checks the condition after the block executes.  
+
+```
+    let i = 1;
+
+    do {
+    console.log(i);
+    i++;
+    } while (i <= 5);
+```  
+
+Here, `i` will be printed from 1 to 5. This loop ensures that the code block runs at least once, even if `i` is already greater than 5 when the loop begins.  
+
+### switch Statement for Multiple Conditions  
+
+For handling multiple potential conditions, a `switch` statement provides a cleaner approach than multiple if...else statements:
+
+```
+    const fruitType = "Bananas";
+
+    switch (fruitType) {
+    case "Oranges":
+        console.log("Oranges are $0.59 a kilo.");
+        break;
+    case "Bananas":
+        console.log("Bananas are $0.48 a kilo.");
+        break;
+    default:
+        console.log("Sorry, we are out of " + fruitType + ".");
+    }
+```
+The `switch` statement evaluates `fruitType` and executes the code corresponding to the matched case. If `fruitType` is `"Bananas"`, it outputs `"Bananas are $0.48 a kilo."`. The `break` statement prevents the program from executing further cases after a match.  
+
+## Summary 
+
+Control flow in JavaScript—through conditionals, loops, and switches—enables us to make decisions, repeat tasks, and handle multiple cases, transforming static code into dynamic, responsive applications.  Mastering these control structures is a crucial step for any developer, as they provide the tools needed to build complex, interactive applications.  
+
+### references
+* https://www.javascripthelp.org/learn/basics/control-flow-statements/
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling 
 
 
 # Q8	Explain type coercion, using examples from the JavaScript programming language
 
+Type coercion in JavaScript is the process of converting a value from one data type to another, either implicitly(automatically) or explicitly(manually).  Understanding type coercion is essential because JavaScript is a weakly typed language, meaning it doesn't strictly enforce data types.  This allows JavaScript to handle operations between mixed types without errors but can sometimes lead to unexpected results.  Type coercion often occurs when comparing values using equality operators or when performing arithmetic operations.  
+
+## Implicit Coercion  
+
+In implicit coercion, JavaScript automatically converts one data type to another based on the operation.  This is often seen with the `==` operator, which performs "loose equality" and allows type coercion to make the comparison possible.  
+
+**Example:**  
+```
+    const a = 100;
+    const b = '100';
+
+    console.log(a == b); // Output: true
+```  
+
+In this example, JavaScript converts `a` to a string to match the type of `b` before making the comparison.  This type conversion allows the comparison to proceed, resulting in `true` because both values match after coercion.  
+
+### Rules for Implicit Coercion:  
+
+JavaScript follows specific rules for implicit coercion:  
+
+1. If one operand is a string, the other operand will be converted to a string.  
+2. If one operand is a number, the other operand will be converted to a number.  
+3. If one operand is a boolean, it will be converted to a number(`true` becomes `1` and `false` becomes `0`).  
+4. If one operand is an object, it will be converted to a primitive value before comparison.  
+5. If one operand is `null` or `undefined`, the other operand must also be `null` or `undefined` for the result to be `true`.  
+
+**Example with Boolean Coercion:**  
+```
+    const x = true;
+    const y = 'true';
+
+    console.log(x == y); // Output: false
+```   
+
+Here, JavaScript converts `x`(`true`) to a number(`1`) before comparing it with `y`.  Since `y` is a string and `1` does not match `'true'`, the comparison returns `false`.
+
+## Explicit Coercion  
+In explicit coercion, the developer intentionally converts a value to a specific type using functions like `Number()`, `String()`, or `Boolean()`.  This approach is more predictable and helps prevent unexpected results.  
+
+**Example:**  
+```
+    let a = " ";
+    let b = Number(a); // Explicitly converts " " to 0
+    console.log(b); // Output: 0
+```  
+
+Here, we use `Number()` to explicitly convert an empty string to `0`.  Explicit coercion is particularly useful when handling values from user inputs or external data sources where type consistency is essential.  
+
+**Example with User Input:**  
+```
+    let a = prompt("Enter a number");
+    console.log(a, typeof a); // prompt() returns a string by default
+    let b = Number(a); // Explicitly converts string to number
+    console.log(b, typeof b);
+```
+This example shows how to handle user input, which defaults to string type, and convert it to a number for further calculations.  
+
+## Loose vs. Strict Equality: `==` and `===`
+In JavaScript, `==` is known as the loose equality operator, and `===` is the strict equality operator.  Both are used for comparisons, but they handle types differently:  
+
+* `==` (**Loose Equality**): Performs implicit coercion if the types of operands differ.  This operator only checks for equality after converting both values to the same type.  
+
+```
+    const a = 100;
+    const b = '100';
+  
+    console.log(a == b); // Output: true
+```   
+
+* `===` (**Strict Equality**): Checks both the type and value without performing coercion.  If the types differ, it returns false immediately.  
+
+```
+    const a = 100;
+    const b = '100';
+
+    console.log(a === b); // Output: false
+```  
+
+Using `===` is generally recommended, as it avoids implicit coercion and ensures that both type and value are strictly equal, making comparisons clearer and reducing the risk of unexpected results.  
+
+## Summary of Differences  
+* **Implicit Coercion:** Happens automatically in operations or comparisons, often with `==`.  For example, `console.log(1 + "2"); // "12"` coerces `1` to a string.  
+* **Explicit Coercion:** Done manually using functions like `Number()`, `String()`, or `Boolean()`.  For example, `console.log(Number("2")); // 2` explicitly converts `"2"` to a number.  
+
+## Why Type Coercion Matters  
+Understanding both implicit and explicit coercion helps JavaScript developers write more predictable and error-resistant code.  While implicit coercion allows concise operations, it can sometimes be confusing.  Explicit coercion, on the other hand, provides clarity and control over data types, helping prevent unexpected outcomes.  
+
+In conclusion, using strict equality (`===`) is often recommended to avoid implicit coercion issues, ensuring comparisons account for both type and value. Embracing these best practices will enhance your understanding of JavaScript and make your code more robust.  
 
 
-
-
-
+### references
+* https://www.freecodecamp.org/news/coercion-and-type-conversion-in-javascript/
+* https://www.geeksforgeeks.org/how-does-implicit-coercion-differs-from-explicit-coercion-in-javascript/
+* https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/
 
 # Q9	Explain data types, using examples from the JavaScript programming language
+In programming, data types specify the kind of data a variable can hold, influencing how that data is stored and manipulated in memory.  They are essential for ensuring efficient memory usage and for the interpreter or compiler to understand what operations can be performed on the data.  
 
+## Data Types in JavaScript  
+JavaScript is a dynamically typed language, meaning variables can change types at runtime based on the assigned value.  This flexibility is powerful but requires careful handling to avoid unexpected behavior.  JavaScript's data types are categorised into primitive and non-primitive types, each serving a different purpose in programming.  
 
+## Primitive Data Types  
+Primitive types represent single, immutable values, meaning they are stored directly in memory.  JavaScript has seven primitive data types:  
 
+1. **Number:** Represents integers and floating-point numbers, handling mathematical operations and including special values like `Infinity` and `NaN`.
+```
+    let score = 100; // Integer
+    let temp = 98.6; // Float
+    console.log(1 / 0); // Infinity
+    console.log("hello" / 2); // NaN
+```  
 
+2. **BigInt:** Introduced to handle very large integers beyond the safe range of `Number`, suitable for precise calculations with large data.  
 
+```
+    const largeValue = 1234567890123456789012345678901234567890n;
+```  
+
+3. **String:** Used for representing text, enclosed in single, double, or backticks.  Backticks support interpolation, making it easy to embed expressions.  
+```
+    let name = "Alice";
+    console.log(`Hello, ${name}!`);
+``` 
+
+4. **Boolean:** Represents logical values, either `true` or `false`, used for decision-making and control structures.  
+```
+    let isActive = true;
+```  
+
+5. **Null:** Represents an intentional absence of value, often used to reset or clear variables.  
+```
+    let userStatus = null;
+```  
+
+6. **Undefined:** Automatically assigned to variables that are declared but not initialised.  It signifies that a variable exists but has no value.  
+```
+    let response;
+    console.log(response); // undefined
+```  
+
+7. **Symbol:** Provides a unique identifier for object properties, ensuring no property name conflicts.  
+```
+    let uniqueId = Symbol("id");
+```  
+
+## Non-Primitive Data Type  
+Non-primitive, or reference types, store references to memory addresses instead of actual values, enabling complex data structures.  
+
+1. **Object:** Stores collections of key-value pairs and supports structures like arrays and functions.  Objects allow complex data management, forming the basis for most JavaScript applications.  
+```
+    let user = { name: "Alice", age: 25 };
+    console.log(user.name); // Alice
+```
+## JavaScript's Unique Typing System  
+JavaScript's dynamic typing and type coercion allow it to convert data types automatically in certain operations, which can lead to unexpected behavior:  
+```
+    console.log("5" - 2); // 3 (type coercion converts "5" to a number)
+    console.log("5" + 2); // "52" (concatenates as a string)
+```   
+
+## Summary
+* **Primitive Types:** Simple, immutable values like `Number`, `BigInt`, `String`, `Boolean`, `Null`, `Undefined`, `Symbol`.  
+* **Non-Primitive Type:** Complex, mutable data structures, primarily `Object`.  
+
+Understanding data types in JavaScript is crucial for effective programming, as it impacts how data is stored, manipulated, and managed within applications. JavaScript's dynamic nature requires a strong grasp of types to avoid bugs and enhance code efficiency.
+
+### references
+* https://www.geeksforgeeks.org/javascript-data-types/ 
+* https://medium.com/@naiemjoy1/understanding-javascript-data-types-a-complete-guide-for-beginners-5e3d0e78e9aa
 
 # Q10	Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
+In JavaScript, arrays are versatile structures that can be manipulated in a variety of ways to handle data efficiently.  Arrays offer a range of built-in methods for adding, removing, transforming, sorting, and searching elements, making them an essential tool in JavaScript programming.  Let's go over how to manipulate arrays with examples to illustrate each technique.
 
+## 1. Adding and Removing Elements  
+Arrays in JavaScript can grow or shrink dynamically. Several methods allow you to add or remove elements from different positions in an array:  
 
+* `push()` and `pop()`:
 
+    - `push()` adds one or more elements to the end of an array.  
+    - `pop()` removes the last element from an array.  
+```
+    let fruits = ["apple", "banana"];
+    fruits.push("cherry"); // ["apple", "banana", "cherry"]
+    fruits.pop();          // ["apple", "banana"]
+```   
 
+* `unshift()` and `shift()`:  
 
+    - `unshift()` adds elements to the beginning of an array.
+    - `shift()` removes the first element.
+```
+    fruits.unshift("date"); // ["date", "apple", "banana"]
+    fruits.shift();         // ["apple", "banana"]
+```   
+
+* `splice()`: `splice()` is a powerful method that can add, remove, or replace elements at any position.  
+```
+    let items = ["one", "two", "three"];
+    items.splice(1, 1, "new"); // ["one", "new", "three"]
+```   
+
+## 2. Accessing and Iterating Over Elements  
+Arrays can be accessed directly by their index, and JavaScript provides multiple methods for iterating over elements:  
+
+* **Accessing Elements:**
+```
+    const colors = ["red", "green", "blue"];
+    console.log(colors[0]); // "red"  
+```  
+
+`for` **loop:** The traditional `for` loop provides index-based access.  
+```
+    for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+    }
+```  
+
+`forEach()`: `forEach()` executes a function once for each array element.  
+```
+    colors.forEach(color => console.log(color)); // "red", "green", "blue"
+```  
+
+`map()`: `map()` creates a new array by applying a function to each element.  
+```
+    let doubled = [1, 2, 3].map(num => num * 2); // [2, 4, 6]
+```  
+
+## 3. Searching and Filtering Elements  
+JavaScript arrays provide methods to locate elements based on conditions:
+
+* `indexOf()` and `includes()`:
+
+    - `indexOf()` returns the index of an element if found, or -1 if not.  
+    - `includes()` checks if an array contains an element.  
+```
+    let nums = [10, 20, 30];
+    console.log(nums.indexOf(20)); // 1
+    console.log(nums.includes(40)); // false
+```   
+
+* `find()` and `findIndex()`:  
+
+    - `find()` returns the first element that matches a condition.  
+    - `findIndex()` returns the index of the first matching element.  
+```
+    let users = [{name: "Alice"}, {name: "Bob"}];
+    let user = users.find(user => user.name === "Alice"); // {name: "Alice"}
+```  
+
+* `filter()`: `filter()` creates a new array with all elements that satisfy a condition.  
+```
+    let evens = [1, 2, 3, 4].filter(num => num % 2 === 0); // [2, 4]
+```   
+
+## 4. Transforming Arrays  
+* `reduce()`: `reduce()` combines elements into a single result by repeatedly applying a function to each element.  
+```
+    let sum = [1, 2, 3, 4].reduce((total, num) => total + num, 0); // 10
+```  
+
+* `concat()`: `concat()` merges arrays, creating a new array.  
+```
+    let combined = [1, 2].concat([3, 4]); // [1, 2, 3, 4]
+```   
+
+## 5. Sorting and Reversing Elements
+* `sort()`: By default, `sort()` arranges elements lexicographically(string order).  For numerical sorting, a custom function is required.  
+```
+    let numbers = [5, 3, 8, 1];
+    numbers.sort((a, b) => a - b); // [1, 3, 5, 8]
+```  
+
+* `reverse()`: `reverse()` reverses the order of elements.  
+```
+    let letters = ["a", "b", "c"];
+    letters.reverse(); // ["c", "b", "a"]
+```  
+
+## 6. String Conversion
+JavaScript arrays can be converted to strings using various methods:
+
+* `join()`: `join()` combines elements into a single string with a specified separator.  
+```
+    let fruits = ["apple", "banana", "cherry"];
+    console.log(fruits.join(", ")); // "apple, banana, cherry"
+```  
+
+* `toString()`: `toString()` converts an array into a comma-separated string.  
+```
+    console.log(fruits.toString()); // "apple,banana,cherry"
+```   
+
+## 7. Working with Nested Arrays and Objects
+JavaScript supports nested arrays (arrays within arrays) and arrays of objects for more complex data structures:  
+
+* **Nested Arrays:**  
+```
+    const matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+    ];
+    console.log(matrix[1][2]); // 6
+```
+* **Arrays of Objects:**  
+```
+    const students = [
+    { name: "Alice", score: 90 },
+    { name: "Bob", score: 85 }
+    ];
+    console.log(students[1].name); // "Bob"
+```  
+
+## 8. Advanced Techniques
+* **Flattening Arrays:** The `flat()` method flattens nested arrays into a single array.
+```
+    const nested = [1, [2, 3], [4, [5]]];
+    console.log(nested.flat(2)); // [1, 2, 3, 4, 5]
+```  
+
+* **Destructuring Arrays:** Destructuring assigns array elements to individual variables.
+```
+    const [a, b] = [10, 20];
+    console.log(a); // 10
+```  
+
+## 9. Using `const` with Arrays
+Declaring arrays with const prevents reassigning the array reference but allows modifying elements:  
+```
+    const fruits = ["apple", "banana"];
+    fruits[0] = "cherry"; // Valid
+    fruits = ["orange"];  // Error: Assignment to constant variable
+```  
+
+## Summary
+JavaScript arrays offer a wide range of methods to manage and transform data efficiently. With tools for adding, removing, sorting, filtering, and even flattening arrays, JavaScript arrays are among the most versatile data structures in programming.  Mastering these array manipulation techniques is essential for writing clean, efficient, and readable code in JavaScript.  
+
+### references
+* https://dev.to/codewithjiss/mastering-javascript-array-manipulation-the-ultimate-guide-with-real-world-examples-3hgd 
+* https://javascript.info/array-methods
+* https://dev.to/engrsakib/mastering-javascript-arrays-techniques-best-practices-and-advanced-uses-42mb
 
 # Q11	Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 
 
 
-
+### references
+* 
 
 # Q12	Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+
+
+
+### references
