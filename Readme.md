@@ -61,9 +61,9 @@ For a large software project, a **standard source control process** should be st
 A standard source control process for a large project is centered around structured branching, disciplined merging, rigorous testing, and collaborative workflows.  It ensures that changes are controlled, traceable, and integrated smoothly across development teams, enabling efficient scaling, faster development cycles, and reliable software delivery.  
 
 ### references 
-* https://www.atlassian.com/git/tutorials/what-is-version-control  
-* https://www.atlassian.com/agile/software-development/branching  
-* https://www.dell.com/en-au/blog/best-practices-for-scaling-version-control-in-the-large-enterprise/
+* Atlassian. (2019). What is version control. Atlassian. https://www.atlassian.com/git/tutorials/what-is-version-control 
+* Atlassian. (2019). Feature branching your way to greatness | Atlassian. Atlassian. https://www.atlassian.com/agile/software-development/branching 
+* Pearlman, J. (2019, July 16). Best Practices for Scaling Version Control in the Large Enterprise | Dell. Dell. https://www.dell.com/en-au/blog/best-practices-for-scaling-version-control-in-the-large-enterprise/
 
 
 # Q2	What are the most important aspects of quality software?
@@ -136,10 +136,10 @@ Testability is the ease with which software can be tested to ensure it functions
 The most important aspects of quality software encompass a blend of operational efficiency, adaptability, and ease of maintenance.  Usability, functionality, reliability, performance, security, maintainability, flexibility, scalability, reusability, and testability are crucial for delivering a robust software solution that aligns with user needs and business goals. By focusing on these aspects, software developers can ensure high-quality software that not only meets immediate requirements but also supports long-term growth, user satisfaction, and business success.
 
 ### references  
-* https://www.softwaretestinghelp.com/what-are-the-quality-attributes/ 
-* https://www.geeksforgeeks.org/software-engineering-characteristics-of-good-software/  
-* https://www.softwaresuggest.com/blog/characteristics-of-good-software/
-* https://getdx.com/blog/software-quality-metrics/  
+* Vijay. (2007, August 31). What Are The Quality Attributes? Softwaretestinghelp.com. https://www.softwaretestinghelp.com/what-are-the-quality-attributes/ 
+* Software Engineering | Characteristics of good Software. (2019, April 30). GeeksforGeeks. https://www.geeksforgeeks.org/software-engineering-characteristics-of-good-software/  
+* Nikunj Dudhat. (2024, August 6). The Characteristics Of Good Software. SoftwareSuggest Blog; SoftwareSuggest. https://www.softwaresuggest.com/blog/characteristics-of-good-software/
+* The 8 software quality metrics that actually matter. (n.d.). Getdx.com. https://getdx.com/blog/software-quality-metrics/  
 
 # Q3	Outline a standard high level structure for a MERN stack application and explain the components
 
@@ -207,9 +207,9 @@ This high-level structure makes the **MERN stack** an efficient choice for build
 
 
 ### references
-* https://medium.com/@shivang1691401/understanding-clean-architecture-in-mern-building-robust-and-maintainable-applications-7546805fd849  
-* https://www.mongodb.com/resources/languages/mern-stack 
-* https://emeritus.org/blog/what-is-mern-stack/ 
+* Yadav, S. (2023, September 17). Understanding Clean Architecture in MERN: Building Robust and Maintainable Applications. Medium. https://medium.com/@shivang1691401/understanding-clean-architecture-in-mern-building-robust-and-maintainable-applications-7546805fd849
+* MongoDB. (n.d.). MERN Stack Explained. MongoDB. https://www.mongodb.com/resources/languages/mern-stack
+* Emeritus. (2023, November 6). Mastering MERN: The Top 4 Components of MERN & Its Use Cases. Emeritus Online Courses. https://emeritus.org/blog/what-is-mern-stack/ 
 
 # Q4	A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 ## Essential Knowledge and Skills Required for a Small Business Website Development Project.  
@@ -313,8 +313,8 @@ A web development project requires a balanced team with technical, creative, and
 
 
 ### references
-* https://www.forbes.com/advisor/business/website-development/
-* https://www.markup.io/blog/web-development-team-structure/#:~:text=In%20short%2C%20you%20need%20a%20skilled%20web%20development,Project%20managers%20SEO%20specialists%20UI%2FUX%20designers%20Content%20specialists
+* Website Development: A Beginner’s Guide – Forbes Advisor. (n.d.). Www.forbes.com. https://www.forbes.com/advisor/business/website-development/
+* Mary. (2023, February 28). The main roles in a web development team structure (& tips to rock it). Markup.io. https://www.markup.io/blog/web-development-team-structure/
 
 # Q5	With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
@@ -447,9 +447,9 @@ In this project, my knowledge and skills were largely effective in achieving the
 The combination of technical skills and project management strategies led to a successful completion of this project, with a robust, secure API meeting the requirements of a multi-user blogging platform.  Going forward, improvements like advanced security measures, and database optimisation would enhance future projects, particularly as they scale.  Additionally, experimenting with newer libraries and frameworks could improve development efficiency and ensure that applications are resilient, secure, and adaptable to users' evolving needs.  
 
 ### references
-* https://www.geeksforgeeks.org/synchronous-and-asynchronous-programming/
-* https://www.ibm.com/topics/redis 
-* https://swagger.io/blog/api-strategy/difference-between-swagger-and-openapi/ 
+* GeeksforGeeks. (2024, May 31). Synchronous and Asynchronous Programming. GeeksforGeeks; GeeksforGeeks. https://www.geeksforgeeks.org/synchronous-and-asynchronous-programming/
+* What is Redis Explained? | IBM. (n.d.). Www.ibm.com. https://www.ibm.com/topics/redis
+* What is OpenAPI? Swagger vs. OpenAPI | Swagger Blog. (2017). SmartBear.com. https://swagger.io/blog/api-strategy/difference-between-swagger-and-openapi/
 
 
 # Q7	Explain control flow, using an example from the JavaScript programming language
@@ -546,8 +546,8 @@ The `switch` statement evaluates `fruitType` and executes the code corresponding
 Control flow in JavaScript—through conditionals, loops, and switches—enables us to make decisions, repeat tasks, and handle multiple cases, transforming static code into dynamic, responsive applications.  Mastering these control structures is a crucial step for any developer, as they provide the tools needed to build complex, interactive applications.  
 
 ### references
-* https://www.javascripthelp.org/learn/basics/control-flow-statements/
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling 
+* Control Flow Statements. (2023). JavaScript Help. https://www.javascripthelp.org/learn/basics/control-flow-statements/
+* Control flow and error handling - JavaScript | MDN. (n.d.). Developer.mozilla.org. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 
 
 # Q8	Explain type coercion, using examples from the JavaScript programming language
@@ -643,9 +643,9 @@ In conclusion, using strict equality (`===`) is often recommended to avoid impli
 
 
 ### references
-* https://www.freecodecamp.org/news/coercion-and-type-conversion-in-javascript/
-* https://www.geeksforgeeks.org/how-does-implicit-coercion-differs-from-explicit-coercion-in-javascript/
-* https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/
+* Coercion and Type Conversion in JavaScript – Explained with Code Examples. (2022, November 7). FreeCodeCamp.org. https://www.freecodecamp.org/news/coercion-and-type-conversion-in-javascript/
+* How does Implicit coercion differs from Explicit coercion in JavaScript ? (2022, November 28). GeeksforGeeks. https://www.geeksforgeeks.org/how-does-implicit-coercion-differs-from-explicit-coercion-in-javascript/
+* GeeksforGeeks. (2020, June 30). What is Type Coercion in JavaScript ? GeeksforGeeks. https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/
 
 # Q9	Explain data types, using examples from the JavaScript programming language
 In programming, data types specify the kind of data a variable can hold, influencing how that data is stored and manipulated in memory.  They are essential for ensuring efficient memory usage and for the interpreter or compiler to understand what operations can be performed on the data.  
@@ -719,8 +719,8 @@ JavaScript's dynamic typing and type coercion allow it to convert data types aut
 Understanding data types in JavaScript is crucial for effective programming, as it impacts how data is stored, manipulated, and managed within applications. JavaScript's dynamic nature requires a strong grasp of types to avoid bugs and enhance code efficiency.
 
 ### references
-* https://www.geeksforgeeks.org/javascript-data-types/ 
-* https://medium.com/@naiemjoy1/understanding-javascript-data-types-a-complete-guide-for-beginners-5e3d0e78e9aa
+* JavaScript Data Types. (2019, April 24). GeeksforGeeks. https://www.geeksforgeeks.org/javascript-data-types/
+* Hasan, N. (2024, October 17). Understanding JavaScript Data Types: A Complete Guide for Beginners. Medium. https://medium.com/@naiemjoy1/understanding-javascript-data-types-a-complete-guide-for-beginners-5e3d0e78e9aa
 
 # Q10	Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 In JavaScript, arrays are versatile structures that can be manipulated in a variety of ways to handle data efficiently.  Arrays offer a range of built-in methods for adding, removing, transforming, sorting, and searching elements, making them an essential tool in JavaScript programming.  Let's go over how to manipulate arrays with examples to illustrate each technique.
@@ -889,21 +889,252 @@ Declaring arrays with const prevents reassigning the array reference but allows 
 JavaScript arrays offer a wide range of methods to manage and transform data efficiently. With tools for adding, removing, sorting, filtering, and even flattening arrays, JavaScript arrays are among the most versatile data structures in programming.  Mastering these array manipulation techniques is essential for writing clean, efficient, and readable code in JavaScript.  
 
 ### references
-* https://dev.to/codewithjiss/mastering-javascript-array-manipulation-the-ultimate-guide-with-real-world-examples-3hgd 
-* https://javascript.info/array-methods
-* https://dev.to/engrsakib/mastering-javascript-arrays-techniques-best-practices-and-advanced-uses-42mb
+* Jose, J. (2023, October 19). Mastering JavaScript Array Manipulation: The Ultimate Guide with Real-World Examples. DEV Community. https://dev.to/codewithjiss/mastering-javascript-array-manipulation-the-ultimate-guide-with-real-world-examples-3hgd 
+* Array methods. (2023). Array methods. Javascript.info. https://javascript.info/array-methods
+* Md Nazmus Sakib. (2024, September 3). Mastering JavaScript Arrays: Techniques, Best Practices, and Advanced Uses. DEV Community. https://dev.to/engrsakib/mastering-javascript-arrays-techniques-best-practices-and-advanced-uses-42mb
 
 # Q11	Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
+In JavaScript, objects are versatile data structures that store collections of key-value pairs.  This flexibility allows us to group related information together, making our code more organised and manageable.  Objects in JavaScript can be easily created, modified, and expanded, which is crucial when working with complex data.  
 
+## Creating and Accessing Objects  
+An object can be created using object literals or constructor functions. For instance:  
+```
+    const object1 = {
+        user: "alex",
+        nationality: "Australia",
+        profession: "Software Engineer",
+        myBio() {
+            console.log(`My name is ${this.user}. I'm a ${this.profession} from ${this.nationality}`);
+        }
+    };
+```   
+Here, `user`, `nationality`, and `profession` are properties, while `myBio()` is a method that uses the `this` keyword to refer to the object itself.  
 
+To access properties or methods in an object, we can use **dot notation** or **bracket notation**:  
 
+* **Dot notation:** `object1.user` would return `"alex"`.  
+* **Bracket notation:** `object1["nationality"]` would return `"Australia"`.  
+
+Dot notation is generally more common, but bracket notation is necessary for properties with special characters or spaces.  
+
+## Adding and Modifying Properties  
+After an object is created, new properties or methods can be added to it. For example:  
+```
+    object1.age = 30;
+    object1["hobby"] = "coding";
+    console.log(object1);
+```   
+
+This adds an `age` property and a `hobby` property to `object1`.  You can also update existing properties in a similar way:  
+```
+    object1.user = "Jane";
+    console.log(object1.user); // "Jane"
+```   
+
+## Getters and Setters
+Objects in JavaScript can also use getter and setter methods to control access to certain properties. A getter method retrieves a property’s value, while a setter method modifies it.  
+```
+    const object2 = {
+        _name: "alex",
+        get name() {
+            return this._name;
+        },
+        set name(newName) {
+            this._name = newName.toUpperCase();
+        }
+    };
+
+    object2.name = "jane";
+    console.log(object2.name); // Outputs: "JANE"
+```   
+
+In this example, `name` is a getter and setter that manipulates the value stored in `_name`. When `object2.name` is set to "jane", it is automatically converted to "JANE" through the setter.  
+
+## Copying Objects  
+JavaScript provides ways to copy objects, such as using the spread operator(`...`) for a shallow copy.  For instance:  
+```
+    let object3 = {...object1};
+    object3.user = "John";
+    console.log(object1.user); // "Jane"
+    console.log(object3.user); // "John"
+```   
+In this example, changes to `object3` do not affect `object1` because they are separate objects.  However, if the object contains nested objects, only references to these nested objects are copied.  
+
+## Prototype and Inheritance
+When creating multiple objects with similar properties and methods, constructor functions can establish a prototype that allows all instances to share methods.  This is useful for creating a base object and adding shared properties or methods on its prototype:  
+```
+    function Profile(name, age, nationality) { 
+        this.name = name; 
+        this.age = age; 
+        this.nationality = nationality; 
+    }
+
+    Profile.prototype.bio = function() {
+        console.log(`My name is ${this.name}. I'm ${this.age} years old. I'm from ${this.nationality}`);
+    };
+
+    const jim = new Profile("jim", 50, "Australia");
+    jim.bio(); // Outputs: My name is jim. I'm 50 years old. I'm from Australia
+```  
+Here, the `bio` method is added to `Profile`'s prototype, so all instances (like `jim`) have access to it without duplicating the method in each object.  
+
+## Iterating Over Object Properties
+JavaScript provides multiple ways to iterate over an object’s properties, including the `for...in` loop, `Object.keys()`, and `Object.entries()`.  
+
+For example, to log all properties and their values:  
+```
+    for (let key in object1) {
+        console.log(`${key}: ${object1[key]}`);
+    }
+```  
+
+Using `Object.keys()` or `Object.entries()` can be helpful as well:  
+```
+    Object.keys(object1).forEach(key => console.log(key)); // Logs all property names
+    Object.entries(object1).forEach(([key, value]) => console.log(`${key}: ${value}`)); // Logs all key-value pairs
+```  
+
+## Merging Objects
+To combine multiple objects, we can use the spread operator to create a new object that merges properties from existing ones:  
+```
+    const objectA = { name: 'Alice', age: 25 };
+    const objectB = { age: 30, profession: 'Engineer' };
+    const mergedObject = { ...objectA, ...objectB };
+    console.log(mergedObject); // { name: 'Alice', age: 30, profession: 'Engineer' }
+```
+Here, properties from `objectB` overwrite those in `objectA` when there are conflicts.  
+
+## Conclusion
+In JavaScript, objects can be easily created, accessed, modified, copied, and iterated over, providing a powerful way to handle structured data within a program. Using advanced techniques like getters/setters, prototype inheritance, and modern iteration and merging methods further demonstrates the flexibility and control JavaScript offers with object manipulation.  
 
 ### references
-* 
+* Gordian, B. (2024, August 9). Creating and Manipulating Objects in JavaScript -Explained! DEV Community. https://dev.to/boniface_gordian/creating-and-manipulating-objects-in-javascript-explained-3g3n
+* Working with objects. (2019, November 27). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+* Objects in JavaScript – A Beginner’s Guide. (2022, July 20). FreeCodeCamp.org. https://www.freecodecamp.org/news/objects-in-javascript-for-beginners/
 
 # Q12	Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
+JavaScript Object Notation(JSON) is a lightweight data interchange format widely used for data transfer between a server and web applications.  JSON data consists of key-value pairs, making it easily readable and writable for both humans and machines.  In JavaScript, JSON can be created, modified, serialised, and parsed using built-in methods like `JSON.stringify()` and `JSON.parse()`. The following explores the ways in which JSON data can be manipulated in JavaScript, including examples and explanations of each method and parameter.  
 
+## 1. Creating JSON Data
+In JavaScript, JSON data is typically created by defining an object with key-value pairs, which can then be converted to a JSON string format using `JSON.stringify()`.  
 
+**Example:**  
+```
+    const person = {
+        name: "John",
+        age: 30,
+        city: "Cairns"
+    };
+    const jsonPerson = JSON.stringify(person);
+    console.log(jsonPerson);  // Output: '{"name":"John","age":30,"city":"Cairns"}'
+```   
+In this example, `person` is a JavaScript object that is converted into a JSON string using `JSON.stringify()`.  
 
+## 2. Parsing JSON Data
+To work with JSON data in JavaScript, JSON strings must be parsed back into JavaScript objects. The `JSON.parse()` method is used to convert a JSON string into an object, making it accessible and manipulatable in JavaScript.  
+
+**Example:**
+```
+    const jsonString = '{"name": "John", "age": 30, "city": "Cairns"}';
+    const jsonObject = JSON.parse(jsonString);
+    console.log(jsonObject);  // Output: { name: 'John', age: 30, city: 'Cairns' }
+```  
+In this example, `jsonString` is converted back into a JavaScript object with `JSON.parse()`, allowing the program to access and manipulate its properties.  
+
+## 3. Modifying JSON Data
+Once parsed, JSON data can be modified by updating or deleting properties on the resulting JavaScript object.  The object can then be re-serialised to JSON format using `JSON.stringify()`.  
+
+**Example:**
+```
+    const jsonCar = '{"make":"Toyota","model": "Camry", "year": 2024}';
+    const car = JSON.parse(jsonCar);
+
+    // Modifying properties
+    car.year = 2020;
+    const updatedJsonCar = JSON.stringify(car);
+    console.log(updatedJsonCar);  // Output: '{"make":"Toyota","model":"Camry","year":2020}'
+```   
+In this example, the `year` property of `car` is updated, and the modified object is re-serialised to a JSON string.  
+
+## 4. Working with Nested JSON Data
+JSON allows for nested structures, supporting arrays and objects within objects.  Nested properties in JSON data can be accessed using dot notation or bracket notation.  
+
+**Example:**
+```
+    const employee = {
+        name: "Jane",
+        department: {
+            name: "Engineering",
+            location: "New Zealand"
+        },
+        projects: [
+            { name: "Project A", status: "In Progress" },
+            { name: "Project B", status: "Completed" }
+        ]
+    };
+
+    // Accessing nested data
+    console.log(employee.department.name);         // Output: Engineering
+    console.log(employee.projects[0].name);        // Output: Project A
+```
+In this example, nested properties within `employee` are accessed using both dot and bracket notation.
+
+## 5. Using the `replacer` Parameter in JSON.stringify()
+The `replacer` parameter in `JSON.stringify()` provides a way to filter the properties that are included in the JSON string.  It can be specified as either an array or a function.  
+
+* **Array as Replacer:** Includes only specified properties in the JSON output.  
+**Example:**
+```
+    const data = { foundation: 'Mozilla', model: 'box', week: 45, transport: 'car', month: 7 };
+    console.log(JSON.stringify(data, ['week', 'month']));  // Output: '{"week":45,"month":7}'
+```  
+
+* **Function as Replacer:** Allows conditional filtering of properties based on custom logic.  
+**Example:**
+```
+    function replacer(key, value) {
+        return typeof value === "string" ? undefined : value;
+    }
+
+    const foo = { foundation: 'Mozilla', model: 'box', week: 45, transport: 'car', month: 7 };
+    console.log(JSON.stringify(foo, replacer));  // Output: '{"week":45,"month":7}'
+```  
+
+## 6. Adding Readable Formatting with the `space` Parameter
+The `space` parameter in `JSON.stringify()` enables formatting of the JSON output, making it more readable by adding indentation.  This is particularly useful for debugging or displaying JSON data in a human-readable format.  
+
+**Example:**
+```
+    const data = { b: 42, c: "42", d: [1, 2, 3] };
+    console.log(JSON.stringify(data, null, 2));
+    // Output:
+    // {
+    //   "b": 42,
+    //   "c": "42",
+    //   "d": [
+    //     1,
+    //     2,
+    //     3
+    //   ]
+    // }
+```  
+In this example, each nested level is indented by 2 spaces, improving readability.
+
+## 7. Transforming Parsed Data with the `reviver` Parameter in JSON.parse()
+The `reviver` function in `JSON.parse()` provides a way to transform each value during parsing.  This is useful for applying transformations or handling specific data types.  
+
+**Example:**
+```
+    const data = '{"value": 5}';
+    const result = JSON.parse(data, (key, value) => typeof value === 'number' ? value * 10 : value);
+    console.log(result);  // Output: { value: 50 }
+```  
+In this example, the `reviver` function multiplies all numeric values by 10 during parsing.
+
+## Conclusion
+JSON manipulation in JavaScript is essential for creating, modifying, and transferring data, especially in web development.  By using `JSON.stringify()` and `JSON.parse()`, along with the `replacer`, `space`, and `reviver` parameters, developers can control the formatting and filtering of JSON data.  This capability allows JavaScript applications to handle JSON data effectively, particularly in scenarios involving APIs, data storage, and server-client communication.  
 
 ### references
+* Tagliaferri, L. (2021, August 26). How To Work with JSON in JavaScript. DigitalOcean. https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
+* GeeksforGeeks. (2024, May 14). How to Create and Manipulatinag JSON Data in javaScript? GeeksforGeeks; GeeksforGeeks. https://www.geeksforgeeks.org/how-to-create-and-manipulatinag-json-data-in-javascript/
+* freeCodeCamp. (2020, February 16). JSON Object Examples: Stringify and Parse Methods Explained. FreeCodeCamp.org. https://www.freecodecamp.org/news/json-stringify-method-explained/
